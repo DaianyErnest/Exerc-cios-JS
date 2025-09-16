@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício DOM</title>
+</head>
+<body>
+  <h1 id="titulo">Bem-vindo(a)</h1>
+  <button onclick="entrar()">Entrar</button>
+
+  <script>
+   function entrar() {
+      const titulo = document.getElementById("titulo");
+      titulo.textContent = "Você entrou na página com sucesso!";
+      titulo.style.color = "red";
+      const botao = document.getElementById("botao");
+      botao.textContent = "Entrou!";
+      const novoElemento = document.createElement("p");
+      novoElemento.textContent = "Seja bem-vindo(a)!";
+      document.body.appendChild(novoElemento);
+    }
+  </script>
+</body>
+</html>
